@@ -1,0 +1,101 @@
+/* Define color variables for easy customization */
+:root {
+    --main-color: #ffb81e; /* メインの色を設定 */
+    --text-color: #fff; /* テキストの色を設定 */
+}
+
+/* bodyのスタイルを設定 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* 背景を黒に */
+    color: var(--text-color); /* 文字色をカスタム変数に */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: left;
+}
+
+/* containerクラスのスタイルを設定 */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+/* headerクラスのスタイルを設定 */
+.header {
+    position: absolute;
+    top: 20px; /* ヘッダーの上部余白 */
+    left: 20px; /* ヘッダーの左余白 */
+}
+
+/* タイトルのスタイル */
+.title {
+    font-size: 2em; /* タイトルを大きく */
+    font-weight: bold;
+    color: var(--text-color); /* 文字色をカスタム変数に */
+    margin: 0;
+}
+
+/* highlightクラスのスタイル */
+.highlight {
+    color: var(--main-color); /* 強調色をカスタム変数に */
+}
+
+/* contentクラスのスタイルを設定 */
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; /* コンテナ全体を中央に配置 */
+    width: 100%;
+}
+
+/* プロフィール画像のスタイル */
+.profile-pic {
+    width: 400px; /* 幅を大きく */
+    height: auto;
+    border-radius: 50%; /* 円形にする */
+    box-shadow: 0 0 15px var(--main-color); /* グロー効果をカスタム変数に */
+    transition: box-shadow 0.3s ease-in-out;
+    margin-left: 50px;
+}
+
+/* Hover effect for profile-pic */
+.profile-pic:hover {
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 75px var(--main-color); /* 強いネオン効果 */
+}
+
+/* profile-textクラスのスタイル */
+.profile-text {
+    text-align: right; /* テキストを右揃え、このrightをleftにすると左揃えになります。 */
+    max-width: 600px; /* テキストの最大幅 */
+    margin-right: 50px;
+}
+
+/* Introのスタイル */
+.intro {
+    font-size: 3em; /* イントロの大きさ */
+    margin-bottom: 10px;
+    color: var(--text-color); /* 文字色をカスタム変数に */
+}
+
+/* 名前のスタイル */
+.name {
+    font-size: 5em; /* 名前をの大きさ */
+    font-weight: bold;
+    margin: 10px 0;
+    color: var(--text-color); /* 文字色をカスタム変数に */
+}
+
+/* 自己紹介文のスタイル */
+.bio {
+    font-size: 2em; /* 自己紹介文の大きさ */
+    margin-bottom: 30px;
+    color: var(--text-color); /* 文字色をカスタム変数に */
+}
