@@ -1,10 +1,10 @@
-/* Define color variables for easy customization */
+/* このメイン色を変えると雰囲気柄って変わるよ！！！！！！！！！！ */
 :root {
     --main-color: #ffb81e; /* メインの色を設定 */
     --text-color: #fff; /* テキストの色を設定 */
 }
 
-/* bodyのスタイルを設定 */
+/* body(全体) */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -17,7 +17,7 @@ body {
     text-align: left;
 }
 
-/* containerクラスのスタイルを設定 */
+/* hi!のとこ */
 .container {
     display: flex;
     flex-direction: column;
@@ -27,14 +27,14 @@ body {
     width: 100%;
 }
 
-/* headerクラスのスタイルを設定 */
+/* ヘッダー */
 .header {
     position: absolute;
     top: 20px; /* ヘッダーの上部余白 */
     left: 20px; /* ヘッダーの左余白 */
 }
 
-/* タイトルのスタイル */
+/* タイトル */
 .title {
     font-size: 2em; /* タイトルを大きく */
     font-weight: bold;
@@ -56,7 +56,7 @@ body {
     width: 100%;
 }
 
-/* プロフィール画像のスタイル */
+/* プロフィール画像 */
 .profile-pic {
     width: 400px; /* 幅を大きく */
     height: auto;
@@ -66,26 +66,26 @@ body {
     margin-left: 50px;
 }
 
-/* Hover effect for profile-pic */
+/* ホバーエフェクト */
 .profile-pic:hover {
     box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color), 0 0 75px var(--main-color); /* 強いネオン効果 */
 }
 
-/* profile-textクラスのスタイル */
+/* プロフィールのテキスト */
 .profile-text {
     text-align: right; /* テキストを右揃え、このrightをleftにすると左揃えになります。 */
     max-width: 600px; /* テキストの最大幅 */
     margin-right: 50px;
 }
 
-/* Introのスタイル */
+/* Intro */
 .intro {
     font-size: 3em; /* イントロの大きさ */
     margin-bottom: 10px;
     color: var(--text-color); /* 文字色をカスタム変数に */
 }
 
-/* 名前のスタイル */
+/* 名前 */
 .name {
     font-size: 5em; /* 名前をの大きさ */
     font-weight: bold;
@@ -93,7 +93,7 @@ body {
     color: var(--text-color); /* 文字色をカスタム変数に */
 }
 
-/* 自己紹介文のスタイル */
+/* 自己紹介文 */
 .bio {
     font-size: 2em; /* 自己紹介文の大きさ */
     margin-bottom: 30px;
