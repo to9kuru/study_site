@@ -10,28 +10,26 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000; /* 背景を黒に */
     color: var(--text-color); /* 文字色をカスタム変数に */
-    display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
     text-align: left;
 }
-
+.header {
+    margin:20px;
+    position: fixed;
+    top:0;
+    left:0;
+}
 /* hi!のとこ */
 .container {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     text-align: left;
     width: 100%;
-}
-
-/* ヘッダー */
-.header {
-    position: absolute;
-    top: 20px; /* ヘッダーの上部余白 */
-    left: 20px; /* ヘッダーの左余白 */
+    height: 100%;
 }
 
 /* タイトル */
@@ -58,8 +56,9 @@ body {
 
 /* プロフィール画像 */
 .profile-pic {
-    width: 400px; /* 幅を大きく */
-    height: auto;
+    width: 400px;
+    height: 400px;
+    object-fit: cover; /* 円形を保つために画像を切り抜く */
     border-radius: 50%; /* 円形にする */
     box-shadow: 0 0 15px var(--main-color); /* グロー効果をカスタム変数に */
     transition: box-shadow 0.3s ease-in-out;
