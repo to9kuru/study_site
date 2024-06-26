@@ -46,7 +46,10 @@ body {
 
 /* highlightクラスのスタイル */
 .highlight {
-    color: var(--main-color); /* 強調色をカスタム変数に */
+    color: black; /* 強調色をカスタム変数に */
+    background-color: var(--main-color); /* 背景色をカスタム変数に */
+    border-radius: 10px;
+    margin-left: 5px;
 }
 
 /* contentクラスのスタイルを設定 */
@@ -101,4 +104,40 @@ body {
     font-size: 2em; /* 自己紹介文の大きさ */
     margin-bottom: 30px;
     color: var(--text-color); /* 文字色をカスタム変数に */
+}
+
+/*ゴミ広告*/
+.ad {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: slideUp 3s ease-out forwards; /* アニメーションを追加 */
+    bottom: 0;
+}
+.ad .ad-contents {
+    width: 300px;
+    text-align: right;
+}
+@keyframes slideUp {
+    from {
+        bottom: -100%; /* アニメーション開始時、広告は画面外に */
+    }
+    to {
+        bottom: 0; /* アニメーション終了時、広告は画面の下端に */
+    }
+}
+
+.ad-button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+        font-size: 8px;
 }
